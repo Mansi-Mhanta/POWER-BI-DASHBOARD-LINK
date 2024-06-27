@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protected Dashboard</title>
+  <script type="text/javascript">
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if (password === "dashboard@123") {
+        window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiZTVkYTBkMzAtYmFjMy00MDM2LTlkOWQtNzJiOGRkM2I0MzJlIiwidCI6ImZlMWQ5NWE5LTRjZTEtNDFhNS04ZWFiLTZkZDQzYWEyNmQ5ZiJ9&pageName=ReportSection";
+      } else {
+        alert("Incorrect password");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Enter Password to Access Dashboard</h2>
+  <input type="password" id="password" />
+  <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
